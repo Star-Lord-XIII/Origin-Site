@@ -1,4 +1,3 @@
-@import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,400,700|Source+Sans+Pro:300,600,300italic,600italic");
 
 /*
@@ -55,14 +54,12 @@
 	#MacAppStore {
 		width: auto;
 		height: 300px;
-		margin-right: 30px;
 		margin-bottom: 30px;
 	}
 
 	#MacAppStoreExporter {
 		width: auto;
 		height: 48px;
-		margin-right: 30px;
 		margin-bottom: 30px;
 	}
 
