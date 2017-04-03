@@ -5,8 +5,55 @@
 		<title>Origin</title>
 		<link rel="stylesheet" href="css/main.css" />
 		<style type="text/css">
+		@-moz-keyframes blink {
+		    0% {
+		        opacity:1;
+		    }
+		    50% {
+		        opacity:0;
+		    }
+		    100% {
+		        opacity:1;
+		    }
+		} 
+
+		@-webkit-keyframes blink {
+		    0% {
+		        opacity:1;
+		    }
+		    50% {
+		        opacity:0;
+		    }
+		    100% {
+		        opacity:1;
+		    }
+		}
+		/* IE */
+		@-ms-keyframes blink {
+		    0% {
+		        opacity:1;
+		    }
+		    50% {
+		        opacity:0;
+		    }
+		    100% {
+		        opacity:1;
+		    }
+		} 
+		/* Opera and prob css3 final iteration */
+		@keyframes blink {
+		    0% {
+		        opacity:1;
+		    }
+		    50% {
+		        opacity:0;
+		    }
+		    100% {
+		        opacity:1;
+		    }
+		} 
 		html {
-			background: url('images/pic08.jpg') no-repeat center center fixed; 
+			//background: url('images/Background.png') no-repeat center center fixed; 
 		  -webkit-background-size: cover;
 		  -moz-background-size: cover;
 		  -o-background-size: cover;
@@ -26,6 +73,21 @@
 			height: 100%;
 			width: 100%;
 			padding: 0px;
+		}
+		.logo {
+			padding-top: 15%;
+			width: 100%;
+			text-align: center;
+		}
+		#banner .logo .icon {
+			top: 50%;
+			height: 230px;
+			width: 50px;
+			-moz-animation: blink normal 2s infinite ease-in-out; /* Firefox */
+		    -webkit-animation: blink normal 2s infinite ease-in-out; /* Webkit */
+		    -ms-animation: blink normal 2s infinite ease-in-out; /* IE */
+		    animation: blink normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
+
 		}
 		footer {
 			font-size: 13px;
@@ -50,7 +112,7 @@
 
 		</script>
 	</head>
-	<body style="background: url('images/pic08.jpg') no-repeat center center fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+	<body style="background: url('images/Background.png') no-repeat center fixed; background-repeat: no-repeat; background-size: cover; overflow: hidden;">
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
